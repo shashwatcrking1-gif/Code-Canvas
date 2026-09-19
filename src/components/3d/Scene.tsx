@@ -64,7 +64,7 @@ export function Scene() {
           </ScrollControls>
 
           {/* Cinematic Bloom for the Black Hole */}
-          <EffectComposer disableNormalPass>
+          <EffectComposer>
             <Bloom luminanceThreshold={0.5} mipmapBlur intensity={1.5} />
           </EffectComposer>
 
