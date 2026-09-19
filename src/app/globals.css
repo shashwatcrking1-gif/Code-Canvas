@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   TAILWIND v4 THEME — Custom tokens for the portfolio
+   ============================================================================ */
+@theme {
+  /* Sage green accent palette */
+  --color-sage-50: #f0f4ee;
+  --color-sage-100: #e1e8dd;
+  --color-sage-200: #c5d1bf;
+  --color-sage-300: #a8b5a0;
+  --color-sage-400: #8fa085;
+  --color-sage-500: #6b7d63;
+  --color-sage-600: #556350;
+  --color-sage-700: #3e4a3a;
+
+  /* Lavender accent */
+  --color-lavender-200: #d4c5e0;
+  --color-lavender-300: #c5b8d6;
+  --color-lavender-400: #b0a0c4;
+
+  /* Sky/blue accent */
+  --color-sky-200: #b8c8d4;
+  --color-sky-300: #a0b4c4;
+
+  /* Glass surfaces */
+  --color-glass: rgba(255, 255, 255, 0.6);
+  --color-glass-border: rgba(255, 255, 255, 0.3);
+
+  /* Page background */
+  --color-page: #fafaf8;
+
+  /* Font */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* Float animation */
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+/* ============================================================================
+   GLOBAL STYLES
+   ============================================================================ */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base body styling */
+body {
+  background-color: #fafaf8;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================================
+   CUSTOM SCROLLBAR
+   ============================================================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 181, 160, 0.4);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 181, 160, 0.6);
+}
+
+/* ============================================================================
+   REDUCED MOTION OVERRIDES
+   ============================================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================================
+   FOCUS STYLES — visible keyboard focus
+   ============================================================================ */
+*:focus-visible {
+  outline: 2px solid rgba(168, 181, 160, 0.7);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ============================================================================
+   GLASS UTILITY
+   ============================================================================ */
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ============================================================================
+   SELECTION COLOR
+   ============================================================================ */
+::selection {
+  background-color: rgba(168, 181, 160, 0.3);
+  color: #1a1a1a;
+}
