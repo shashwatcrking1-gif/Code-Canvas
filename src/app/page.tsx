@@ -1,11 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { Hero } from "@/components/sections/Hero";
-import { About } from "@/components/sections/About";
-import { VideoShowcase } from "@/components/sections/VideoShowcase";
-import { ProjectShowcase } from "@/components/sections/ProjectShowcase";
-import { Contact } from "@/components/sections/Contact";
+
 
 /**
  * Dynamically import the 3D Scene with no SSR — Three.js requires the
@@ -24,17 +20,7 @@ const Scene = dynamic(
 export default function Home() {
   return (
     <>
-      {/* 3D background — fixed behind all content */}
       <Scene />
-
-      {/* Page sections — scrollable content above the 3D layer */}
-      <main className="relative z-10">
-        <Hero />
-        <About />
-        <VideoShowcase />
-        <ProjectShowcase />
-        <Contact />
-      </main>
     </>
   );
 }

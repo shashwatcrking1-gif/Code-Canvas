@@ -58,12 +58,12 @@ export function VideoShowcase() {
                 >
                   {/* Play button overlay */}
                   <div className="w-full h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="w-14 h-14 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                    <div className="w-14 h-14 rounded-full bg-[#0a0a0c]/80 backdrop-blur-sm flex items-center justify-center shadow-lg">
                       <svg
                         width="22"
                         height="22"
                         viewBox="0 0 24 24"
-                        fill="#1a1a1a"
+                        fill="#f0f0f0"
                       >
                         <polygon points="5 3 19 12 5 21 5 3" />
                       </svg>
@@ -73,15 +73,15 @@ export function VideoShowcase() {
 
                 {/* Card content */}
                 <div className="p-6">
-                  <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">
+                  <h3 className="text-lg font-semibold text-[#f0f0f0] mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-sm text-[#4a4a4a] font-light leading-relaxed mb-4">
+                  <p className="text-sm text-[#a0a0a0] font-light leading-relaxed mb-4">
                     {project.description}
                   </p>
                   <button
                     onClick={() => setActiveVideoId(project.youtubeId)}
-                    className="text-sm font-medium text-[#8fa085] hover:text-[#6b7d63] transition-colors focus:outline-none focus:ring-2 focus:ring-[#a8b5a0]/50 rounded-lg px-3 py-1.5 -ml-3"
+                    className="text-sm font-medium text-[#fa9705] hover:text-[#db7600] transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffb833]/50 rounded-lg px-3 py-1.5 -ml-3"
                   >
                     Watch →
                   </button>

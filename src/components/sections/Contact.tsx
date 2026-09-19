@@ -68,7 +68,7 @@ export function Contact() {
             {/* Email */}
             <a
               href={`mailto:${socialLinks.email}`}
-              className="text-xl md:text-2xl font-light text-[#1a1a1a] hover:text-[#8fa085] transition-colors focus:outline-none focus:ring-2 focus:ring-[#a8b5a0]/50 rounded-lg px-2 py-1"
+              className="text-xl md:text-2xl font-light text-[#f0f0f0] hover:text-[#fa9705] transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffb833]/50 rounded-lg px-2 py-1"
             >
               {socialLinks.email}
             </a>
@@ -81,7 +81,7 @@ export function Contact() {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-xl bg-white/50 border border-white/30 flex items-center justify-center text-[#4a4a4a] hover:text-[#1a1a1a] hover:bg-white/80 transition-all focus:outline-none focus:ring-2 focus:ring-[#a8b5a0]/50"
+                  className="w-12 h-12 rounded-xl bg-[#0a0a0c]/50 border border-[#ffb833]/15 flex items-center justify-center text-[#a0a0a0] hover:text-[#f0f0f0] hover:bg-[#0a0a0c]/80 transition-all focus:outline-none focus:ring-2 focus:ring-[#ffb833]/50"
                   whileHover={{ y: -3 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label={social.name}

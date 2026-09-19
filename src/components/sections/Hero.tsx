@@ -40,14 +40,14 @@ export function Hero() {
       >
         <motion.h1
           variants={itemVariants}
-          className="text-5xl md:text-7xl lg:text-8xl font-semibold text-[#1a1a1a] tracking-tight leading-[1.1]"
+          className="text-5xl md:text-7xl lg:text-8xl font-semibold text-[#f0f0f0] tracking-tight leading-[1.1]"
         >
           {personalInfo.name}
         </motion.h1>
 
         <motion.p
           variants={itemVariants}
-          className="mt-6 text-xl md:text-2xl text-[#4a4a4a] font-light max-w-lg mx-auto"
+          className="mt-6 text-xl md:text-2xl text-[#a0a0a0] font-light max-w-lg mx-auto"
         >
           {personalInfo.tagline}
         </motion.p>
@@ -63,7 +63,7 @@ export function Hero() {
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="flex flex-col items-center gap-2 text-[#8fa085]"
+          className="flex flex-col items-center gap-2 text-[#fa9705]"
         >
           <span className="text-xs uppercase tracking-[0.2em] font-light">
             Scroll

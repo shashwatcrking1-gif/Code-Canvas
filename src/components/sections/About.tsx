@@ -39,7 +39,7 @@ export function About() {
 
         {/* Bio */}
         <motion.p
-          className="text-lg md:text-xl text-[#4a4a4a] font-light leading-relaxed max-w-3xl mb-16"
+          className="text-lg md:text-xl text-[#a0a0a0] font-light leading-relaxed max-w-3xl mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
@@ -58,8 +58,8 @@ export function About() {
             transition={{ duration: 0.5, delay: 0.15 }}
           >
             <GlassCard className="p-8">
-              <h3 className="text-xl font-semibold text-[#1a1a1a] mb-6 flex items-center gap-3">
-                <span className="w-8 h-8 rounded-lg bg-[#a8b5a0]/20 flex items-center justify-center text-sm">
+              <h3 className="text-xl font-semibold text-[#f0f0f0] mb-6 flex items-center gap-3">
+                <span className="w-8 h-8 rounded-lg bg-[#ffb833]/20 flex items-center justify-center text-sm">
                   🎬
                 </span>
                 Video Editing
@@ -75,9 +75,9 @@ export function About() {
                   <motion.li
                     key={skill}
                     variants={skillItem}
-                    className="text-[#4a4a4a] font-light flex items-center gap-2"
+                    className="text-[#a0a0a0] font-light flex items-center gap-2"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#a8b5a0]" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#ffb833]" />
                     {skill}
                   </motion.li>
                 ))}
@@ -93,7 +93,7 @@ export function About() {
             transition={{ duration: 0.5, delay: 0.25 }}
           >
             <GlassCard className="p-8">
-              <h3 className="text-xl font-semibold text-[#1a1a1a] mb-6 flex items-center gap-3">
+              <h3 className="text-xl font-semibold text-[#f0f0f0] mb-6 flex items-center gap-3">
                 <span className="w-8 h-8 rounded-lg bg-[#b8c8d4]/20 flex items-center justify-center text-sm">
                   💻
                 </span>
@@ -110,7 +110,7 @@ export function About() {
                   <motion.li
                     key={skill}
                     variants={skillItem}
-                    className="text-[#4a4a4a] font-light flex items-center gap-2"
+                    className="text-[#a0a0a0] font-light flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#b8c8d4]" />
                     {skill}

@@ -25,7 +25,7 @@ const pieces: PieceConfig[] = [
     startPosition: [-5, 4, -8],
     endPosition: [0, 0.5, 0],
     scale: 0.65,
-    color: "#a8b5a0",
+    color: "#ffb833",
   },
   {
     geometry: "octahedron",
@@ -46,7 +46,7 @@ const pieces: PieceConfig[] = [
     startPosition: [3, 6, -12],
     endPosition: [0.3, 0.9, -0.5],
     scale: 0.35,
-    color: "#c5d1bf",
+    color: "#ffd37a",
   },
 ];
 

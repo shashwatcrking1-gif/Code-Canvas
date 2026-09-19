@@ -19,8 +19,8 @@ export function GlassCard({ children, className = "", onClick }: GlassCardProps)
     <motion.div
       className={`
         relative overflow-hidden rounded-2xl
-        bg-white/60 backdrop-blur-xl
-        border border-white/30
+        bg-[#0a0a0c]/60 backdrop-blur-xl
+        border border-[#ffb833]/15
         shadow-lg shadow-black/[0.03]
         ${onClick ? "cursor-pointer" : ""}
         ${className}

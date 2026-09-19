@@ -45,12 +45,12 @@ export function ProjectShowcase() {
             >
               <GlassCard className="p-6 flex flex-col h-full">
                 {/* Title */}
-                <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">
+                <h3 className="text-lg font-semibold text-[#f0f0f0] mb-2">
                   {project.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm text-[#4a4a4a] font-light leading-relaxed mb-4 flex-grow">
+                <p className="text-sm text-[#a0a0a0] font-light leading-relaxed mb-4 flex-grow">
                   {project.description}
                 </p>
 
@@ -59,7 +59,7 @@ export function ProjectShowcase() {
                   {project.techStack.map((tech) => (
                     <span
                       key={tech}
-                      className="text-xs font-medium text-[#6b7d63] bg-[#a8b5a0]/15 px-3 py-1 rounded-full"
+                      className="text-xs font-medium text-[#db7600] bg-[#ffb833]/15 px-3 py-1 rounded-full"
                     >
                       {tech}
                     </span>
@@ -72,7 +72,7 @@ export function ProjectShowcase() {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-medium text-[#4a4a4a] hover:text-[#1a1a1a] transition-colors focus:outline-none focus:ring-2 focus:ring-[#a8b5a0]/50 rounded-lg px-2 py-1 -ml-2 flex items-center gap-1.5"
+                    className="text-sm font-medium text-[#a0a0a0] hover:text-[#f0f0f0] transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffb833]/50 rounded-lg px-2 py-1 -ml-2 flex items-center gap-1.5"
                   >
                     {/* GitHub icon */}
                     <svg
@@ -90,7 +90,7 @@ export function ProjectShowcase() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm font-medium text-[#8fa085] hover:text-[#6b7d63] transition-colors focus:outline-none focus:ring-2 focus:ring-[#a8b5a0]/50 rounded-lg px-2 py-1 flex items-center gap-1.5"
+                      className="text-sm font-medium text-[#fa9705] hover:text-[#db7600] transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffb833]/50 rounded-lg px-2 py-1 flex items-center gap-1.5"
                     >
                       {/* External link icon */}
                       <svg

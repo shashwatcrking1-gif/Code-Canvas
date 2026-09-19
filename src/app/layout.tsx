@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#FAFAF8",
+  themeColor: "#030303",
 };
 
 export default function RootLayout({
@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans antialiased bg-[#FAFAF8] text-[#1a1a1a]">
+      <body className="font-sans antialiased bg-[#030303] text-[#f0f0f0]">
         <ScrollProgress />
         {children}
       </body>
